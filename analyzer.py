@@ -3,7 +3,6 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from pydantic import BaseModel
 from schemas import CVData, JobRequirements, MatchAnalysis
-from logger import logger
 
 load_dotenv()
 key = os.getenv("OPENAI_API_KEY")
