@@ -10,8 +10,7 @@ client = OpenAI(
     base_url="http://localhost:11434/v1",
     api_key="ollama",  # required by SDK but ignored by Ollama
 )
-MODEL = "qwen2.5:7b"
-
+MODEL = "gemma3:4b"
 def _call_structured(system: str, user: str, schema: type[BaseModel]) -> BaseModel:
     """Helper : call claude and parse response into pydynamic model"""
 
